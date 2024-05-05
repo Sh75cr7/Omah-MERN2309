@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --primary:#203239;
+    --primaryLight:rgba(32, 50, 57, 0.5);
+    --secondary:#F6762E;
+    --bgcolor:#EEEDDE;
+    --white:#FFFFFF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    width: 1166px;
+    margin: 0 auto;
+}
+nav{
+    padding-top: 50px;
+    background-color: var(--bgcolor);
+}
+/* navbar start */
+ nav .nav_wrapper{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 50px; */
+ }
+ nav ul{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+
+ }
+ nav ul li{
+    list-style: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--primary);
+    transition: .4s;
+    position: relative;
+ }
+ nav ul li:hover{
+    font-weight: 600;
+  
+ }
+ nav ul li::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--secondary);
+    border-radius: 20px;
+    transition: .4s;
+ }
+ nav ul li:hover::after{
+    width: 50%;
+ }
+/* navbar ending */
+
+/* bannner start */
+ #banner{
+    background-color: var(--bgcolor);
+    padding-top: 96px;
+    padding-bottom: 120px;
+ }
+ #banner .bannerWrapper{
+    display: flex;
+    align-items: center;
+ }
+ #banner .left{
+    width: 65%;
+   
+ }
+ #banner .right{
+    width: 35%;
+    text-align: end;
+  
+ }
+ #banner .right img{
+    margin-top: 96px;
+ }
+ #banner .left h1{
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 84px;
+    color: var(--primary);
+    width: 777px;
+ }
+ #banner .left p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--primaryLight) ;
+    width: 544px;
+    margin-top: 24px;
+    margin-bottom: 55px;
+ }
+ #banner .left input{
+    width: 508px;
+    height: 70px;
+    border-radius: 15px;
+    border: none;
+    padding-left: 56px;
+
+ }
+ #banner .left input::placeholder{
+    font-weight: 300;
+    color: var(--primaryLight);
+    font-size: 16px;
+    line-height: 24px;
+
+ }
+ #banner .left .bannerIcon{
+    position: absolute;
+    top:50%;
+    left: 20px;
+    transform: translateY(-50%);
+    
+ }
+ #banner .left .inputbox{
+    position: relative;
+ 
+ }
+ #banner .left a{
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--primaryLight);
+    line-height: 24px;
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 23px 41px;
+    background-color:var(--white) ;
+    display: inline-block;
+ }
+ #banner .inputwrapper{
+    display: flex;
+    gap: 15px;
+ }
+  /* banner Ending */
+ /* Properti start */
+ #Properti{
+   padding-top: 100px;
+ }
+ 
+ #Properti h2{
+   font-weight: 600;
+   font-size: 36px;
+   line-height: 54px;
+ }
+ #Properti .elementswrapper{
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 100px;
+ }
+ #Properti .item{
+   width: 300px;
+   box-shadow: 2px 2px 4px 4px rgba(32, 50, 57, 0.25);
+  margin-top: 62px;
+  padding-left: 33px;
+  padding-right: 33px;
+  position: relative;
+  border-radius: 10px;
+ }
+ #Properti .item::after{
+   content: '';
+   position: absolute;
+   top: 17px;
+   left: 0;
+   height: 30px;
+   width: 8px;
+   background-color: var(--secondary);
+   border-radius: 17px;
+ }
+ #Properti .itemWrapper{
+   display: flex;
+   justify-content: space-between;
+   padding-right: -10px;
+   padding-top: 20px;
+ }
+ #Properti .item h3{
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 24px;
+   color: var(--primary);
+ }
+ #Properti .item h4{
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 24px;
+   color: var(--secondary);
+
+ }
+ #Properti .item p{
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 30px;
+   color: var(--primaryLight);
+   margin-top: 8px;
+ }
+ #Properti .item a{
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 24px;
+   color: var(--primary);
+   text-decoration: none;
+   margin-top: 48px;
+   padding-bottom: 20px;
+   display: inline-block;
+ }
+  /* Properti end */
+  /* Residen part start */
+  #Residen{
+   background-color: var(--bgcolor);
+   padding-top: 68px;
+   padding-bottom: 163px;
+  }
+  #Residen h3{
+   color: var(--secondary);
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 24px;
+  }
+  #Residen h2{
+   color: var(--primary);
+   font-weight: 600;
+   font-size: 36px;
+   line-height: 44px;
+   margin-top: 8px;
+  }
+  #Residen .residentWrapper{
+   display: flex;
+   margin-top: 64px;
+  }
+  #Residen .left{
+   width: 50%;
+   position: relative;
+   
+  }
+  #Residen .left .houseTwo{
+   content: '';
+   position: absolute;
+   top: 60px;
+   left: 168px;
+  }
+  #Residen .right{
+  
+   width: 50%;
+  }
+  #Residen .right h2{
+   font-weight: 600;
+   font-size: 36px;
+   line-height: 54px;
+   color: var(--primary);
+  }
+  #Residen .right p{
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 30px;
+   color: var(--primary);
+  }
+  #Residen .right a{
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 24px;
+   color: var(--primary);
+   border-radius: 10px;
+   text-decoration: none;
+   border: 1px solid var(--primary);
+   padding: 13px 41px;
+   display: inline-block;
+   margin-top: 61px;
+  }
+  #Residen .right a:hover{
+   color: var(--white);
+   background-color: var(--primary);
+  }
+ .ancor{
+   margin-left: 48px;
+  }
+  #Residen .right .icons{
+   margin-right: 12px;
+  } 
+  /* Residen part Ending */
+  /*-- ======================kotta  Favorit part start========================== -- */
+  #kota{
+
+  }
+  #kota .title{
+   padding-top: 68px;
+  }
+  #kota .title h4{
+   color: var(--secondary);
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 24px;
+  }
+  #kota .title h3{
+   color: var(--primary);
+   font-weight: 600;
+   font-size: 36px;
+   line-height: 54px;
+  }
+  .kotawrapper{
+   display: flex;
+   justify-content: space-between;
+  }
+  #kota .kotaitem{
+   width: 32%;
+   margin-top: 64px;
+  }
+  #kota .kotaitem h3{
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 36px;
+   color: var(--primary);
+   margin-top: 16px;
+  }
+  #kota .kotaitem p{
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 30px;
+   color: var(--primary);
+   margin-top: 8px;
+  }
+  /*-- ======================kotta  Favorit part Ending========================== -- */
+  /*-- ======================footer  Favorit part start========================== -- */
+footer{
+   margin-top: 68px;
+   background-color: var(--bgcolor);
+}
+  .footerwrapper{
+   display: flex;
+}
+  .leftfooter{
+   width: 50%;
+  }
+  .leftfooter h2{
+   font-weight: 600;
+   font-size: 36px;
+   line-height: 54px;
+   margin-top: 48px;
+  }
+  .footeritem{
+   display: flex;
+   width: 274px;
+   /* height: 167px; */
+   padding-top: 25px;
+   padding-bottom: 15px;
+   border-radius: 10px;
+   background-color: var(--white);
+   justify-content: center;
+   gap: 11px;
+  }
+.footerphn{
+  font-size: 34px;
+  padding-top: 30px;
+  }
+  .footeritem h4{
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 34px;
+   color: var(--primary);
+   margin-top: 10px;
+  }
+  .footeritem h5{
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   color: var(--primary);
+   margin-top: 8px;
+  }
+  .footeritem a{
+   font-weight: 600;
+   font-size: 16px;
+   color: var(--white);
+   background-color: var(--primary);
+   border-radius: 5px;
+   display: inline-block;
+  padding: 10px 18px;
+  text-decoration: none;
+  margin-top: 27px;
+  }
+  .footerwrapper{
+   display: flex;
+   gap: 24px;
+   margin-top: 74px;
+  }
+   
+  .rightfooter{
+   width: 50%;
+   
+  }
+  .rightfooter h2{
+   font-weight: 600;
+   font-size: 36px;
+   line-height: 54px;
+   margin-top: 88px;
+   margin-left: 157px;
+  }
+  .rightfooter .images{
+   /* height: 104px;
+   width: 156px; */
+  margin-left: 206px;
+  margin-top: 70px;
+  }
+  .footercontact{
+   width: 100%;
+ /* height: 70px; */
+
+   background-color: var(--primary);
+   margin-top: 48px;
+  
+  }
+  .socalmedia{
+   display: flex;
+   justify-content: space-between;
+ 
+   
+  }
+  .socalmedia ul{
+   display: flex;
+   align-items: center;
+   gap: 64px;
+  }
+  .socalmedia ul li{
+   list-style: none;
+   color: var(--bgcolor);
+  }
+  /*-- ======================footer Favorit part Ending========================== -- */
